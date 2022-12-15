@@ -1,0 +1,235 @@
+/* Font import from google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191923;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    gap: 5px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px 0px;
+}
+
+td {
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+ul,
+li {
+    list-style: none;
+    color: gray;
+    font-size: 14px;
+    padding: 3px 0px;
+}
+
+h2 {
+    color: white;
+    padding: 20px 0px 5px 0px;
+}
+
+h5 {
+    color: #dcdcdc;
+}
+
+
+/*///////////////////
+///// SIDEPANEL ////
+/////////////////*/
+
+#sidePanel {
+    height: 100%;
+    background-color: #1E1E28;
+    position: sticky;
+    top: 0%;
+}
+
+.sidePanelSeperator {
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #80808040;
+}
+
+.sidePanelHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.sidePanelHeader img {
+    width: 120px;
+}
+
+.sidePanelHeader a {
+    text-decoration: none;
+}
+
+.sidePanelHeader a p {
+    color: #FFC107;
+    font-size: 16px;
+}
+
+.sidePanelHeader p {
+    color: gray;
+    font-size: 12px;
+}
+
+#sidePanelFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #2C2C39;
+}
+
+#sidePanelFooter a img {
+    width: auto;
+    height: 25px;
+}
+
+#sidePanelFooter a {
+    display: flex;
+    align-items: center;
+}
+
+.tdAlignRight {
+    text-align: right;
+    color: gray;
+}
+
+.sidePanelSection {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px 0px;
+}
+
+.headerP {
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+
+/*///////////////////
+///// MAINPANEL ////
+/////////////////*/
+
+#mainPanel {
+    margin: 0 auto;
+    background-color: #1E1E28;
+    padding: 1%;
+}
+
+#mainPanelBannerContainer {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BLcorner,
+#TRcorner {
+    position: absolute;
+    height: 150px;
+    width: auto;
+}
+
+#BLcorner {
+    bottom: 0;
+    left: 0;
+}
+
+#TRcorner {
+    top: 0;
+    right: 0;
+}
+
+.cardContainer {
+    display: grid;
+    /* TODO Change this to 1 coloumn at X pixels */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5%;
+    background-color: #2C2C39;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+
+.card p,
+.card a {
+    color: white;
+}
+
+.card a {
+    color: #FFC107;
+
+}
+
+.cardImg {
+    border-radius: 5% 5% 0% 0%;
+}
+
+.cardTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1%;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cardTextContainer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTextContainer img {
+    width: auto;
+    height: 30px;
+    opacity: 1;
+}
+
+.cardTextContainer img:hover,
+#sidePanelFooter img:hover {
+    opacity: 0.6;
+}
