@@ -31,25 +31,25 @@ table {
 }
 
 td {
-    color: #dcdcdc;
+    color: #f1f1f1;
     font-size: 14px;
 }
 
 ul,
 li {
     list-style: none;
-    color: gray;
+    color: #cfcfcf;
     font-size: 14px;
     padding: 3px 0px;
 }
 
 h2 {
     color: white;
-    padding: 20px 0px 5px 0px;
+    padding-top: 20px;
 }
 
 h5 {
-    color: #dcdcdc;
+    color: #f1f1f1;
 }
 
 
@@ -95,7 +95,7 @@ h5 {
 }
 
 .sidePanelHeader p {
-    color: gray;
+    color: #cfcfcf;
     font-size: 12px;
 }
 
@@ -121,7 +121,7 @@ h5 {
 
 .tdAlignRight {
     text-align: right;
-    color: gray;
+    color: #cfcfcf;
 }
 
 .sidePanelSection {
@@ -131,7 +131,7 @@ h5 {
 }
 
 .headerP {
-    color: #dcdcdc;
+    color: #f1f1f1;
     font-size: 14px;
 }
 
@@ -144,6 +144,9 @@ h5 {
     margin: 0 auto;
     background-color: #1E1E28;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #mainPanelBannerContainer {
@@ -153,6 +156,15 @@ h5 {
     justify-content: center;
     align-items: center;
 }
+
+#mainPanelBannerText h1 {
+    color: white;
+}
+
+#mainPanelBannerText p {
+    color: #cfcfcf;
+}
+
 
 #BLcorner,
 #TRcorner {
