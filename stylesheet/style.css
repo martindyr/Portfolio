@@ -19,6 +19,7 @@ main {
     gap: 5px;
 }
 
+
 img {
     height: auto;
     width: 100%;
@@ -100,6 +101,27 @@ h5 {
     font-size: 12px;
 }
 
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto;
+    width: 80%;
+
+    padding: 7px 0px;
+}
+
+.infoSection div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoSection p {
+    color: #f1f1f1;
+    font-size: 14px;
+    white-space: nowrap
+}
+
 #sidePanelFooter {
     display: flex;
     flex-direction: row;
@@ -122,7 +144,7 @@ h5 {
 
 .tdAlignRight {
     text-align: right;
-    color: #cfcfcf;
+    color: #cfcfcf !important;
 }
 
 .sidePanelSection {
@@ -186,7 +208,6 @@ h5 {
 
 .cardContainer {
     display: grid;
-    /* TODO Change this to 1 coloumn at X pixels */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
 }
@@ -245,4 +266,56 @@ h5 {
 .cardTextContainer img:hover,
 #sidePanelFooter img:hover {
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    body {
+        width: 600px;
+    }
+
+    .cardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #mainPanelBannerText {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    body {
+        width: 450px;
+    }
+
+    #mainPanelBannerText {
+        width: 80%;
+    }
+
+
+    .sidePanelSeperator {
+        width: 80%;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #80808040;
+    }
+
+    .sidePanelHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0px;
+        width: 150px;
+    }
+
+    #mainPanelBannerText h1 {
+        color: white;
+        white-space: nowrap;
+        font-size: 28px;
+    }
+
 }
