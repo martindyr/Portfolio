@@ -303,12 +303,6 @@ h5 {
     }
 
     .sidePanelHeader {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        padding: 10px 0px;
         width: 150px;
     }
 
@@ -316,6 +310,37 @@ h5 {
         color: white;
         white-space: nowrap;
         font-size: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        width: 430px;
+    }
+
+
+    #mainPanelBannerText {
+        width: 80%;
+    }
+
+
+    .sidePanelSeperator {
+        width: 80%;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #80808040;
+    }
+
+    .sidePanelHeader {
+        width: 150px;
+    }
+
+    #mainPanelBannerText h1 {
+        color: white;
+        white-space: nowrap;
+        font-size: 20px;
     }
 
 }
