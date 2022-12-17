@@ -317,14 +317,16 @@ h5 {
 @media only screen and (max-width: 500px) {
 
     body {
-        width: 430px;
+        max-width: 100vw;
     }
 
+    #mainPanel {
+        padding: 1% 3% 1% 1%;
+    }
 
     #mainPanelBannerText {
         width: 80%;
     }
-
 
     .sidePanelSeperator {
         width: 80%;
@@ -340,7 +342,10 @@ h5 {
     #mainPanelBannerText h1 {
         color: white;
         white-space: nowrap;
-        font-size: 20px;
+        font-size: 18px;
     }
 
+    .cardTextContainer a {
+        white-space: nowrap;
+    }
 }
